@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>PAS-POL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <p class="menu">MENU</p>
+</head>
+
+<body>
+    <div class="gray">
+    <div class="atami">
+        <img id="mypicture" src="image1.jpg" width="100%" >
+        <p>PAS-SOL<br><span>旅のモノづくりブランド。</span></p>
+    </div>
+    <script>
+    let pics_src = new Array("image1.jpg","image2.jpg","image3.jpg");
+    let num = -1;
+
+    slideshow_timer();
+
+    function slideshow_timer(){
+        if (num == 2){
+            num = 0;
+        } 
+        else {
+            num ++;
+        }
+        document.getElementById("mypicture").src=pics_src[num];
+        setTimeout("slideshow_timer()",3000); 
+    }
+    </script>
+    
+    <div class="sentense">
+
+    <h1>旅に出よう。</h1>
+
+    <p class="p1">僕たちが作りたいのは<br>
+        持っているだけで旅に出たくなるモノ。<br>
+        持っているだけでわくわくするモノ。<br>
+        <br>
+        それは新しい時代の “パスポート”<br>
+        僕たちが作るものは、<br>
+        そんな、存在でありたい。<br>
+        <br>
+        そして、人と人が繋がる<br>
+        こんな時代だからこそ、<br>
+        僕たちは、みんなでひとつのモノを<br>
+        作ることを追求したい。
+    </p>
+
+    <h1>「PAS-POL」</h1>
+
+    <p class="p1">それは、自分と世界を繋げる<br>
+        旅のモノづくりブランド
+    </p>
+
+    </div>
+    </div>
+
+<h3>PRODUCT</h3>
+
+
+    <div class="flex-container">
+        
+        <div class="flex-item">
+            <img src="image4.jpg" width=50% >
+            <p>地球一周365日<br>
+                世界遺産絶景の旅</p>
+        </div>
+
+        <div class="flex-item">
+            <img src="image5.jpg" width=60%  >
+            <p>365日京都<br>
+                絶景の旅</p>
+        </div>
+
+        <div class="flex-item">
+            <img src="image6.jpg" width=60% >
+            <p>365日北海道<br>
+                絶景日めくりカレンダー</p>
+        </div>
+    </div>
+    
+    
+    <div class="flex-container_footer">
+        <div class="flex-item_footer">
+            <p>TOP</p>
+        </div>
+        <div class="flex-item">
+            <p>PRODUCT</p>
+        </div>
+        <div class="flex-item">
+            <p>ABOUT</p>
+        </div>
+        <div class="flex-item">
+            <p>NEWS</p>
+        </div>
+        <div class="flex-item">
+            <p>CONTACT</p>
+        </div>
+    </div>
+</body>
+</html>
